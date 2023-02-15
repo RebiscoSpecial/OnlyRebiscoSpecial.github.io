@@ -10,3 +10,5 @@ div {
 			  background: url(http://trabajando.unpocodetodo.info/images/branch.gif) no-repeat, -ms-radial-gradient( 0px 0px, circle farthest-side, rgba(251, 251, 251, 0), rgba(255, 255, 255, 0));
 			 background-size: 75%; 
 			}
+			* {
+    overflow: hidden;
