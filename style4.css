@@ -1,0 +1,12 @@
+/*  https://codepen.io/Mahi-K/full/wvqYLEL  */
+
+div {
+			  margin: 0;
+			 
+			background: url(http://trabajando.unpocodetodo.info/images/branch.gif)  no-repeat, -o-radial-gradient( 0px 0px, circle farthest-side, rgba(251, 251, 251, 0), rgba(255, 255, 255, 0));
+			  background: url(http://trabajando.unpocodetodo.info/images/branch.gif)  no-repeat, radial-gradient( farthest-side circle at 0px 0px, rgba(251, 251, 251, 0), rgba(255, 255, 255, 0));
+			  background: url(http://trabajando.unpocodetodo.info/images/branch.gif) no-repeat, -webkit-radial-gradient( 0px 0px, circle farthest-side, rgba(251, 251, 251, 0), rgba(255, 255, 255, 0));
+			  background: url(http://trabajando.unpocodetodo.info/images/branch.gif) no-repeat);
+			  background: url(http://trabajando.unpocodetodo.info/images/branch.gif) no-repeat, -ms-radial-gradient( 0px 0px, circle farthest-side, rgba(251, 251, 251, 0), rgba(255, 255, 255, 0));
+			 background-size: 75%; 
+			}
