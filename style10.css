@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+}
+
+/* Nav Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topnav a {
+  float: right;
+  color: #f4a7ba;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #f4a7ba;
+  color: #000;
+}
+
+/* About Text */
+
+.about {
+  background-color: #0f0f0f;
+  color: white;
+  margin: 50px;
+  padding: 40px;
+}
+
+/* Name selection */
+
+.profile {
+  overflow: hidden;
+  background-color: #000;
+  padding-left: 40px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.profile a {
+  float: left;
+  color: #f4a7ba;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.profile a:hover {
+  color: white;
+}
+
+/* Images */
+
+.centered-container {
+  text-align: center;
+}
+
+.logo-image {
+  width: auto;
+  max-width: 80%;
+  margin: 1%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.title-img {
+  max-width: 70%;
+  padding-top: 5%;
+}
+
+.shop-img {
+   width: auto;
+   max-width: 40%;
+   padding-bottom: 10%;
+   padding-top: 10%;
+}
+
+.tour-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding-bottom: 5%;
+}
+
+/* Footer */
+
+.footer-nav-left a {
+  color: #f4a7ba;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-nav-left a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Slide Show */
+.slideshow-container {
+  max-width: 55%;
+  position: relative;
+  margin: auto;
+}
+
+/* The indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #474747;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+dot.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

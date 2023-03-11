@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌸BLACKPINK’처럼🌸</title>
+  <link rel="stylesheet" href="./style10.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+</body>
+<body>
+
+  <div class="topnav">   
+  </div>
+
+  <div class="centered-container">
+    <img class="logo-image" src="https://www.dropbox.com/s/kie0jj8mxjt6ne6/blackpink-png-logo-14.png?raw=1">
+  </div>
+
+
+  <div class="title-container" id="about">
+    <img class="title-img" src="https://www.dropbox.com/s/tmfekn2uh9xsrmn/title.png?raw=1">
+  </div>
+<center>
+ <audio controls autoplay loop hidden="hidden">
+         <source src = "black.mp3" type = "audio/mp3">
+      </audio>
+	  </center>
+  <div class="about">
+    <p> BLACKPINK is a four-member South Korean girl group formed by YG Entertainment in 2016. The members are Jisoo, Jennie, Rosé, and Lisa. 
+	Jisoo was born on January 3, 1995, in Seoul, South Korea. She is the oldest member of the group and is known for her charming personality and strong vocals.
+
+Jennie was born on January 16, 1996, in Seoul, South Korea. She is the main rapper and lead vocalist of the group and is known for her powerful stage presence and fashion sense.
+
+Rosé was born on February 11, 1997, in Auckland, New Zealand. She is the main vocalist of the group and is known for her unique vocal tone and emotive performances.
+
+Lisa was born on March 27, 1997, in Bangkok, Thailand. She is the main dancer and lead rapper of the group and is known for her incredible dance skills and charismatic stage presence.
+    </p>
+
+    <p>BLACKPINK made their debut on August 8, 2016, with the single album "Square One," which included the hit songs "Whistle" and "Boombayah." Since then, they have become one of the most successful and popular K-pop groups in the world, known for their catchy music, stunning visuals, and powerful performances.
+
+Some of BLACKPINK's most popular songs include "DDU-DU DDU-DU," "Kill This Love," "How You Like That," and "Lovesick Girls." They have also collaborated with other popular artists such as Lady Gaga and Selena Gomez.
+
+In addition to their music, BLACKPINK has also gained a large following for their fashion and beauty styles. They have become ambassadors for various brands and have been featured in numerous magazines and fashion shows.
+    </p>
+  </div>
+
+  <div class="profile" id="profile">
+    <a onclick="currentSlide(1)">JENNIE</a>
+    <a onclick="currentSlide(2)">ROSE</a>
+    <a onclick="currentSlide(3)">JISOO</a>
+    <a onclick="currentSlide(4)">LISA</a>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="Slides fade">
+      <img src="https://www.dropbox.com/s/qu59q543htoow1k/BP_2.jpg?raw=1" style="width:100%">
+    </div>
+
+    <div class="Slides fade">
+      <img src="https://www.dropbox.com/s/5opd7opm94x868t/BP_3.jpg?raw=1" style="width:100%">
+    </div>
+
+    <div class="Slides fade">
+      <img src="https://www.dropbox.com/s/n7f9mke9pdfs9cw/BP_4.jpg?raw=1" style="width:100%">
+    </div>
+
+    <div class="Slides fade">
+      <img src="https://www.dropbox.com/s/3277h1kctdh1aol/BP_5.jpg?raw=1" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Arrow controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("Slides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+</div>
+
+<!-- Make image smaller -->
+
+
+
+
+<!--Fix image border issues later-->
+
+<div class="centered-container" id="tour">
+  </div>
+
+<div class="footer">
+  <div class="footer-nav-left">
+    <ul>
+    </ul>
+  </div>
+
+  <div class="footer-social-right">
+  </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
