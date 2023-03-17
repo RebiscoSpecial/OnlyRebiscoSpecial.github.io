@@ -1,0 +1,52 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: scroll;
+}
+
+.story {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgray;
+  position: relative;
+  min-width: 30%;
+  min-height: 110%;
+  background-attachment: fixed;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.story > header {
+  position: absolute;
+  left: 39%;
+  top: 10%;
+  overflow: hidden;
+}
+.story > header h1 {
+  text-shadow: 2px 2px 4px black;
+}
+.story > section {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  overflow: hidden;
+}
+
+#story-1 {
+  background-image: url(https://media.istockphoto.com/id/1429443528/vector/girls-women-set-of-icons.jpg?s=612x612&w=0&k=20&c=8Z3g0ToNvVXVeHn8Ma7fqtzbgLvKbrtN0RB8FkNrcQc=);
+}
+
+#story-2 {
+  background-image: url(https://t3.ftcdn.net/jpg/03/93/16/94/360_F_393169414_Hklsara231QlvOSfqAM2sz4qGE4Bnwrv.jpg);
+}
+
+#story-3 {
+  background-image: url(https://i.pinimg.com/originals/61/3c/69/613c69ead13f91f8f8b97a4aa840b974.jpg);
+}
