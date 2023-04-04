@@ -550,7 +550,9 @@ section{
   100% {
     scale: 1;
   }
-	body{
+}
+}
+body{
   background:#ededed;
 }
 /* customizable snowflake styling */
@@ -574,5 +576,5 @@ section{
   font-family: 'Raleway', sans-serif;
 color: #000;		
 }
-}
+
 
