@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rebisco Special Website - Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: pink;
+		}
+		h1 {
+			text-align: center;
+		}
+		form {
+			text-align: center;
+		}
+		input[type=text], input[type=password] {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button[type=submit] {
+			background-color: black;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button[type=submit]:hover {
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<h1>Only Rebisco special can login</h1>
+	<form action="redirect.html" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<button type="submit">Login</button>
+	</form>
+	
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const username = document.querySelector('#username').value;
+			const password = document.querySelector('#password').value;
+			if (username === 'hanna' && password === 'rebisco') {
+				window.location.href = 'index.html';
+			} else {
+				alert('Unauthorized Credential Breaching Calling the police now Dial#911');
+			}
+		});
+	</script>
+</body>
+</html>
