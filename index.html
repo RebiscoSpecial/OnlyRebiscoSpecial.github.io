@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rebisco Special Website - Login</title>
+	<title>Rebisco Special Website</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
@@ -9,7 +9,14 @@
 			background-color: pink;
 		}
 		h1 {
+			font-family: 'Delicious Handwritten', cursive;
 			text-align: center;
+			padding: 20px;
+			background-color: pink;
+			color: white;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			margin-top: 50px;
 		}
 		form {
 			text-align: center;
@@ -43,6 +50,7 @@
 			z-index: -1;
 		}
 	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
 </head>
 <body>
 	<video id="bg-video" autoplay loop muted>
@@ -56,19 +64,18 @@
 		<input type="password" id="password" name="password"><br><br>
 		<button type="submit">Login</button>
 	</form>
-	
-	<script>
-		const form = document.querySelector('form');
-		form.addEventListener('submit', (event) => {
-			event.preventDefault();
-			const username = document.querySelector('#username').value;
-			const password = document.querySelector('#password').value;
-			if (username === 'hanna' && password === 'rebisco') {
-				window.location.href = 'main.html';
-			} else {
-				alert('UNFORTUNATELY YOURE NOT SPECIAL SO PRESS "OK" IF YOURE NOT SPECIAL DESPITE ALREADY KNOWING YOU ARE NOT SPECIAL');
-			}
-		});
-	</script>
+    <script>
+	const form = document.querySelector('form');
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		const username = document.querySelector('#username').value;
+		const password = document.querySelector('#password').value;
+		if (username === 'hanna' && password === 'rebisco') {
+			window.location.href = 'main.html';
+		} else {
+			alert('UNFORTUNATELY YOURE NOT SPECIAL SO PRESS "OK" IF YOURE NOT SPECIAL DESPITE ALREADY KNOWING YOU ARE NOT SPECIAL');
+		}
+	});
+</script>
 </body>
 </html>
