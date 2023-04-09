@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("https://images.unsplash.com/photo-1598020976584-b52bb2b05fc3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzU1MDU4MTc&ixlib=rb-4.0.3&q=80");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(138, 139, 140, 0.8);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  display: none;
+  transition: opacity 5s 5s linear;
+}
+
+.mask.active {
+  display: flex;
+  opacity: 100;
+}
+
+.mask .winner {
+  width: 400px;
+  height: 150px;
+  background-color: #fefff9;
+  margin-bottom: 50px;
+  color: #5a1730;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  line-height: 150px;
+  box-shadow: 1px 4px 5px rgba(76, 87, 96, 0.3);
+  border: #5a1730 2px solid;
+}
+
+.mask svg {
+  width: 200px;
+}
+
+.list-wrap {
+  position: absolute;
+  left: -362px;
+  padding: 30px 30px 0 30px;
+  background-color: #f8e7e4;
+  height: 95vh;
+  width: 300px;
+  z-index: 2;
+  border: #5a1730 2px solid;
+  transition: left 0.1s 0s linear;
+}
+
+.list-wrap.active {
+  left: 0px;
+}
+
+.list-wrap .listBtn {
+  position: absolute;
+  background-color: #f8e7e4;
+  color: #5a1730;
+  border-radius: 0 20% 20% 0;
+  border: #5a1730 2px solid;
+  border-left: none;
+  right: -42px;
+  width: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-wrap .listBtn:hover {
+  cursor: pointer;
+}
+
+input {
+  border: #5a1730 3px solid;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px 10px;
+  width: 270px;
+}
+
+.list-wrap .list {
+  height: 90vh;
+  overflow: scroll;
+}
+.list-wrap li {
+  color: #5a1730;
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 10px 30px;
+}
+
+.gachapon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+}
+
+.switch {
+  width: 70px;
+  position: absolute;
+  bottom: 75px;
+  left: 115px;
+  transition: transform 0.3s 0s linear;
+}
+
+.switch:hover {
+  cursor: pointer;
+}
+
+.switch.active {
+  transform: rotate(-90deg);
+}
+
+.machine {
+  width: 300px;
+}
+
+.egg {
+  display: none;
+  opacity: 0;
+  transform: translate(0, -25px);
+  transition: transform 0.4s 1.5s linear, opacity 0.1s 1.5s linear;
+  transition: transform 0s 0s linear, opacity 0s 0s linear;
+}
+
+.egg.active {
+  display: block;
+  opacity: 100;
+  transform: translate(0, 35px);
+  transition: transform 0.2s 1.5s linear, opacity 0.1s 1.5s linear;
+}
+
+.egg:hover {
+  cursor: pointer;
+}
