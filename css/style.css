@@ -12,7 +12,7 @@ body {
 	line-height: 1;
 	margin: 0;
 	padding: 0;
-	position: relative;
+        position: relative;
         top: 50px;
         left: 1px;
 }
@@ -1256,5 +1256,3 @@ body {
     z-index: 2;
   }
 }
-
-
